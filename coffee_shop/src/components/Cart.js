@@ -20,7 +20,7 @@ const Cart = ({ items, showCartItems }) => {
         );
       })}
       <div>
-        <a href="#home" className="btn btn__large">
+        <a href="#home" className="btn btn__large" style={{ width: "100%" }}>
           checkout now
         </a>
       </div>

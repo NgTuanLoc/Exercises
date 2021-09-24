@@ -9,7 +9,7 @@ const Home = () => {
           Officia est consequatur enim possimus, iste beatae fugit deserunt
           quos!
         </p>
-        <a href="#home" className="btn btn__large" style={{ width: "20rem" }}>
+        <a href="#home" className="btn btn__large">
           get yours now
         </a>
       </div>

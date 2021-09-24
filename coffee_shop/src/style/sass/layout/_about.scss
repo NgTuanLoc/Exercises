@@ -1,0 +1,35 @@
+.about {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+
+  &__row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: var(--black);
+  }
+
+  &__image {
+    flex: 1 1 45rem;
+    & > img {
+      width: 100%;
+    }
+  }
+
+  &__content {
+    flex: 1 1 45rem;
+    padding: 2rem;
+    & > h3 {
+      font-size: 3rem;
+      color: white;
+    }
+
+    & > p {
+      font-size: 1.6rem;
+      color: gainsboro;
+      padding: 1rem 0;
+      line-height: 1.8rem;
+    }
+  }
+}

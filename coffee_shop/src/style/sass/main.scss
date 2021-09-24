@@ -2,11 +2,12 @@
 // BASE
 @import "base/base";
 @import "base/animations";
+@import "base/typography";
 
 // LAYOUT
 @import "layout/header";
 @import "layout/home";
-
+@import "layout/about";
 
 // COMPONENT
 @import "components/button";
