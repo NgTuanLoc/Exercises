@@ -4,7 +4,8 @@ const About = () => {
   return (
     <section className="about" id="about">
       <h1 className="heading">
-        <span>About</span> Us
+        About
+        <span> Us</span>
       </h1>
       <div className="about__row">
         <div className="about__image">
@@ -21,7 +22,9 @@ const About = () => {
             deserunt, sequi aliquam temporibus provident. Pariatur fuga totam
             quisquam nisi non.
           </p>
-          <a href="#home" className="btn btn__large">Learn More</a>
+          <a href="#home" className="btn btn__large">
+            Learn More
+          </a>
         </div>
       </div>
     </section>

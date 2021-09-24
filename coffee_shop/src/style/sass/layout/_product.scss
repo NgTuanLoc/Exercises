@@ -1,0 +1,41 @@
+.product {
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.5rem;
+  }
+
+  &__item {
+    text-align: center;
+    border: var(--border);
+    padding: 2rem;
+  }
+  &__icons > i {
+    height: 5rem;
+    width: 5rem;
+    border: var(--border);
+    line-height: 5rem;
+    font-size: 2rem;
+    color: white;
+    margin: 1rem;
+    cursor: pointer;
+
+    &:hover {
+      background: var(--primary-color);
+    }
+  }
+
+  &__content {
+    & > h3 {
+      margin-top: 1.5rem;
+      color: white;
+      font-size: 2.5rem;
+    }
+  }
+
+  &__rating {
+    font-size: 2rem;
+    margin-top: 1rem;
+    color: var(--primary-color);
+  }
+}
