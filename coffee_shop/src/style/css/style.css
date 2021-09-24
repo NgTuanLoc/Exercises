@@ -72,6 +72,11 @@ section {
   text-transform: uppercase;
 }
 
+.price {
+  font-size: 1.5rem;
+  color: var(--primary-color);
+}
+
 .header {
   background: rgba(0, 0, 0, 0.8);
   display: flex;
@@ -211,6 +216,36 @@ section {
   line-height: 1.8rem;
 }
 
+.menu__container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+}
+.menu__item {
+  padding: 5rem;
+  margin: 1rem;
+  text-align: center;
+  border: var(--border);
+}
+.menu__item img {
+  height: 10rem;
+}
+.menu__item h3 {
+  color: white;
+  font-size: 2.5rem;
+  padding: 0.5rem 0;
+}
+.menu__item span {
+  font-size: 1.5rem;
+  text-decoration: line-through;
+  font-weight: lighter;
+}
+.menu__item:hover {
+  background: white;
+}
+.menu__item:hover > * {
+  color: var(--black);
+}
+
 .btn {
   margin-top: 1rem;
   display: inline-block;
@@ -254,10 +289,6 @@ section {
   color: var(--black);
 }
 .cart-item__icon:hover {
-  color: var(--primary-color);
-}
-.cart-item .price {
-  font-size: 1.5rem;
   color: var(--primary-color);
 }
 
