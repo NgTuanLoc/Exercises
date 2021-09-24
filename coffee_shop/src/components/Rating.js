@@ -2,8 +2,6 @@ const Rating = ({ rating, className }) => {
   const starCount = new Array(Math.trunc(rating)).fill(1);
   starCount.push(rating - Math.trunc(rating));
 
-  console.log(starCount);
-
   return (
     <div className={className}>
       {starCount.map((star, id) => {

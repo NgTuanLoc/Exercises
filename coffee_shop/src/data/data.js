@@ -14,6 +14,10 @@ import productItem1 from "../images/product-1.png";
 import productItem2 from "../images/product-2.png";
 import productItem3 from "../images/product-3.png";
 
+import customer1 from "../images/pic-1.png";
+import customer2 from "../images/pic-2.png";
+import customer3 from "../images/pic-3.png";
+
 export const cartItems = [
   {
     img: cartItem1,
@@ -97,5 +101,29 @@ export const productItem = [
     rating: 3,
     beforePrice: "20.99",
     finalPrice: "15.99",
+  },
+];
+
+export const customers = [
+  {
+    img: customer1,
+    name: "Smith Rowes",
+    rating: 3.5,
+    review:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi nulla sit libero nemo fuga sequi nobis? Necessitatibus aut laborum, nisi quas eaque laudantium consequuntur iste ex aliquam minus vel? Nemo. ",
+  },
+  {
+    img: customer2,
+    name: "Agatha Smith",
+    rating: 5,
+    review:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi nulla sit libero nemo fuga sequi nobis? Necessitatibus aut laborum, nisi quas eaque laudantium consequuntur iste ex aliquam minus vel? Nemo. ",
+  },
+  {
+    img: customer3,
+    name: "Eric Catona",
+    rating: 4.6,
+    review:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi nulla sit libero nemo fuga sequi nobis? Necessitatibus aut laborum, nisi quas eaque laudantium consequuntur iste ex aliquam minus vel? Nemo. ",
   },
 ];

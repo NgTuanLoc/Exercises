@@ -1,9 +1,9 @@
 import { productItem } from "../data/data";
 import Rating from "../components/Rating";
 
-const Product = () => {
+const Products = () => {
   return (
-    <section className="product" id="product">
+    <section className="product" id="products">
       <h1 className="heading">
         Our <span>Products</span>
       </h1>
@@ -34,4 +34,4 @@ const Product = () => {
   );
 };
 
-export default Product;
+export default Products;

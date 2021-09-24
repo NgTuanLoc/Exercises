@@ -1,0 +1,33 @@
+.reviews {
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.5rem;
+  }
+
+  &__item {
+    padding: 3rem 2rem;
+    border: var(--border);
+    text-align: center;
+
+    & > p {
+      font-size: 1.5rem;
+      line-height: 1.8;
+      color: #ccc;
+      padding: 2rem 0;
+    }
+
+    & > h3 {
+      padding: 1rem 0;
+      font-size: 2rem;
+      color: #fff;
+    }
+  }
+
+  &__user {
+    height: 10rem;
+    width: 10rem;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+}
