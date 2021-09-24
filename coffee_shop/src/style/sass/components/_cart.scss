@@ -1,0 +1,40 @@
+.cart-item {
+  position: relative;
+  margin: 2rem 0;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+
+  & > img {
+    height: 7rem;
+  }
+
+  & h3 {
+    font-size: 2rem;
+    color: var(--black);
+    padding-bottom: 0.5rem;
+  }
+
+  &__icon {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 2rem;
+    cursor: pointer;
+    color: var(--black);
+
+    &:hover {
+      color: var(--primary-color);
+    }
+  }
+  .price {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+  }
+}
+
+#btn__checkout {
+  background-color: var(--primary-color);
+  width: 100%;
+  text-align: center;
+}

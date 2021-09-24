@@ -1,7 +1,7 @@
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css");
 // BASE
 @import "base/base";
-
+@import "base/animations";
 
 // LAYOUT
 @import "layout/header";
@@ -9,3 +9,4 @@
 
 // COMPONENT
 @import "components/button";
+@import "components/cart";

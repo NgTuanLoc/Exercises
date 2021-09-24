@@ -78,6 +78,17 @@
   }
 
   &__cart-item-container {
-    display: none;
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    height: calc(100vh - 9.5rem);
+    width: 35rem;
+    background: #fff;
+    padding: 0 1.5rem;
+    transition: all 2s;
+
+    &--active {
+      right: 0;
+    }
   }
 }

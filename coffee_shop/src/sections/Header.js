@@ -6,8 +6,15 @@ import { cartItems } from "../data/data";
 
 const Header = () => {
   const [showSearchForm, setShowSearchForm] = useState(false);
+  const [showCartItems, setShowCartItems] = useState(false);
+
   const searchFormHandle = () => {
+    setShowCartItems(false);
     setShowSearchForm(!showSearchForm);
+  };
+  const showCartItemsHandle = () => {
+    setShowSearchForm(false);
+    setShowCartItems(!showCartItems);
   };
   return (
     <header className="header">
@@ -31,14 +38,26 @@ const Header = () => {
           id="search-btn"
           onClick={searchFormHandle}
         />
-        <div className="fas fa-shopping-cart" id="cart-btn" />
+        <div
+          className="fas fa-shopping-cart"
+          id="cart-btn"
+          onClick={showCartItemsHandle}
+        />
         <div className="fas fa-bars" id="menu-btn" />
       </div>
-      <div className={`header__search-form header__search-form${showSearchForm ? "--active" : ""}`}>
+      <div
+        className={`header__search-form header__search-form${
+          showSearchForm ? "--active" : ""
+        }`}
+      >
         <input type="search" id="search-box" placeholder="search here..." />
         <label htmlFor="search-box" className="fas fa-search" />
       </div>
-      <Cart items={cartItems} />
+      <Cart
+        items={cartItems}
+        onClick={showCartItemsHandle}
+        showCartItems={showCartItems}
+      />
     </header>
   );
 };
