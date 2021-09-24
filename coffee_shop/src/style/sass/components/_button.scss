@@ -11,3 +11,10 @@
 .btn:hover {
   letter-spacing: 0.2rem;
 }
+
+
+.btn__large {
+  background-color: var(--primary-color);
+  width: 100%;
+  text-align: center;
+}

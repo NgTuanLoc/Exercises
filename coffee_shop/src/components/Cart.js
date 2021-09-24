@@ -20,7 +20,7 @@ const Cart = ({ items, showCartItems }) => {
         );
       })}
       <div>
-        <a href="#home" className="btn" id="btn__checkout">
+        <a href="#home" className="btn btn__large">
           checkout now
         </a>
       </div>

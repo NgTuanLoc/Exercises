@@ -1,0 +1,26 @@
+.home {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background: url("https://i.ibb.co/yk5j53n/home-img.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  &__content {
+    max-width: 60rem;
+
+    & > h3 {
+      font-size: 6rem;
+      text-transform: uppercase;
+      color: white;
+    }
+
+    & > p {
+      font-size: 2rem;
+      font-weight: lighter;
+      line-height: 1.8;
+      padding: 1rem 0;
+      color: #eee;
+    }
+  }
+}

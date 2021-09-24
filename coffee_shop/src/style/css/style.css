@@ -143,6 +143,30 @@ section {
   right: 0;
 }
 
+.home {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background: url("https://i.ibb.co/yk5j53n/home-img.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.home__content {
+  max-width: 60rem;
+}
+.home__content > h3 {
+  font-size: 6rem;
+  text-transform: uppercase;
+  color: white;
+}
+.home__content > p {
+  font-size: 2rem;
+  font-weight: lighter;
+  line-height: 1.8;
+  padding: 1rem 0;
+  color: #eee;
+}
+
 .btn {
   margin-top: 1rem;
   display: inline-block;
@@ -155,6 +179,12 @@ section {
 
 .btn:hover {
   letter-spacing: 0.2rem;
+}
+
+.btn__large {
+  background-color: var(--primary-color);
+  width: 100%;
+  text-align: center;
 }
 
 .cart-item {
@@ -186,12 +216,6 @@ section {
 .cart-item .price {
   font-size: 1.5rem;
   color: var(--primary-color);
-}
-
-#btn__checkout {
-  background-color: var(--primary-color);
-  width: 100%;
-  text-align: center;
 }
 
 /*# sourceMappingURL=style.css.map */
