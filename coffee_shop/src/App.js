@@ -5,6 +5,7 @@ import Menu from "./sections/Menu";
 import Products from "./sections/Products";
 import Reviews from "./sections/Reviews";
 import Contact from "./sections/Contact";
+import Blogs from "./sections/Blogs";
 
 const App = () => {
   return (
@@ -16,6 +17,7 @@ const App = () => {
       <Products />
       <Reviews />
       <Contact />
+      <Blogs />
     </div>
   );
 };

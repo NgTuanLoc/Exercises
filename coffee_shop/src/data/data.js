@@ -18,6 +18,10 @@ import customer1 from "../images/pic-1.png";
 import customer2 from "../images/pic-2.png";
 import customer3 from "../images/pic-3.png";
 
+import blog1 from "../images/blog-1.jpeg";
+import blog2 from "../images/blog-2.jpeg";
+import blog3 from "../images/blog-3.jpeg";
+
 export const cartItems = [
   {
     img: cartItem1,
@@ -125,5 +129,29 @@ export const customers = [
     rating: 4.6,
     review:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi nulla sit libero nemo fuga sequi nobis? Necessitatibus aut laborum, nisi quas eaque laudantium consequuntur iste ex aliquam minus vel? Nemo. ",
+  },
+];
+
+export const blog = [
+  {
+    img: blog1,
+    title: "tasty and refreshing coffee",
+    author: "Admin",
+    date: "21st may, 2021",
+    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, dicta. ",
+  },
+  {
+    img: blog2,
+    title: "tasty and refreshing coffee",
+    author: "Admin",
+    date: "21st may, 2021",
+    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, dicta. ",
+  },
+  {
+    img: blog3,
+    title: "tasty and refreshing coffee",
+    author: "Admin",
+    date: "21st may, 2021",
+    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, dicta. ",
   },
 ];

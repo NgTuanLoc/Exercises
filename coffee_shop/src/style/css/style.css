@@ -366,6 +366,50 @@ section {
   background: none;
 }
 
+.blogs__container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+}
+.blogs__item {
+  border: var(--border);
+}
+.blogs__item:hover img {
+  scale: 1.2;
+}
+.blogs__img {
+  height: 25rem;
+  width: 100%;
+  overflow: hidden;
+}
+.blogs__img img {
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+}
+.blogs__content {
+  padding: 2rem;
+}
+.blogs__content p {
+  font-size: 1.6rem;
+  line-height: 1.8;
+  color: #ccc;
+  padding: 1rem 0;
+}
+.blogs__content span {
+  color: var(--primary-color);
+  display: block;
+  padding-top: 1rem;
+  font-size: 2rem;
+}
+.blogs__title {
+  font-size: 2.5rem;
+  line-height: 1.5;
+  color: #fff;
+}
+.blogs__title:hover {
+  color: var(--primary-color);
+}
+
 .btn {
   margin-top: 1rem;
   display: inline-block;
