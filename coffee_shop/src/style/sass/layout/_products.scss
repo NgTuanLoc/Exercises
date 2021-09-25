@@ -5,6 +5,10 @@
     gap: 1.5rem;
   }
 
+  &__image {
+    height: 25rem;
+  }
+
   &__item {
     text-align: center;
     border: var(--border);
