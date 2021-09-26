@@ -162,12 +162,12 @@ section {
 .header__cart-item-container {
   position: absolute;
   top: 100%;
-  right: -100%;
+  right: -40%;
   height: calc(100vh - 9.5rem);
   width: 35rem;
   background: #fff;
   padding: 0 1.5rem;
-  transition: all 2s;
+  transition: all 1s;
 }
 .header__cart-item-container--active {
   right: 0;
@@ -410,6 +410,54 @@ section {
   color: var(--primary-color);
 }
 
+.footer {
+  background: var(--black);
+  text-align: center;
+}
+.footer__social {
+  padding: 1rem 0;
+}
+.footer__social a {
+  color: white;
+  height: 5rem;
+  width: 5rem;
+  line-height: 5rem;
+  font-size: 2rem;
+  border: var(--border);
+  border-radius: 50%;
+  margin: 0.5rem;
+}
+.footer__social--fb:hover {
+  background-color: #1877f2;
+}
+.footer__social--tw:hover {
+  background-color: #1da1f2;
+}
+.footer__social--in:hover {
+  background-color: #e4405f;
+}
+.footer__social--li:hover {
+  background-color: #0a66c2;
+}
+.footer__social--pi:hover {
+  background-color: #bd081c;
+}
+.footer__links {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 2rem 0;
+}
+.footer__links a {
+  font-size: 2rem;
+  border: var(--border);
+  color: white;
+  padding: 1rem 1rem;
+  margin: 1rem;
+}
+.footer__links a:hover {
+  background-color: var(--primary-color);
+}
 .btn {
   margin-top: 1rem;
   display: inline-block;

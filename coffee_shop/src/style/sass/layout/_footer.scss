@@ -1,0 +1,56 @@
+.footer {
+  background: var(--black);
+  text-align: center;
+  &__social {
+    padding: 1rem 0;
+    & a {
+      color: white;
+      height: 5rem;
+      width: 5rem;
+      line-height: 5rem;
+      font-size: 2rem;
+      border: var(--border);
+      border-radius: 50%;
+      margin: 0.5rem;
+    }
+
+    &--fb:hover {
+      background-color: #1877f2;
+    }
+    &--tw:hover {
+      background-color: #1da1f2;
+    }
+    &--in:hover {
+      background-color: #e4405f;
+    }
+    &--li:hover {
+      background-color: #0a66c2;
+    }
+    &--pi:hover {
+      background-color: #bd081c;
+    }
+  }
+
+  &__links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 2rem 0;
+
+    & a {
+      font-size: 2rem;
+      border: var(--border);
+      color: white;
+      padding: 1rem 1rem;
+      margin: 1rem;
+
+      &:hover {
+        background-color: var(--primary-color);
+      }
+    }
+  }
+
+  &__credit {
+
+  }
+}
