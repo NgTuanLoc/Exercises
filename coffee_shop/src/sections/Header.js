@@ -7,6 +7,7 @@ import { cartItems } from "../data/data";
 const Header = () => {
   const [showSearchForm, setShowSearchForm] = useState(false);
   const [showCartItems, setShowCartItems] = useState(false);
+  const [menuClicked, setMenuClicked] = useState(false);
 
   const searchFormHandle = () => {
     setShowCartItems(false);
@@ -16,13 +17,21 @@ const Header = () => {
     setShowSearchForm(false);
     setShowCartItems(!showCartItems);
   };
+
+  const menuButtonHandler = () => {
+    setMenuClicked(!menuClicked);
+  };
   return (
     <header className="header">
       <a href="#home" className="header__logo">
         <img src={logo} alt="coffee-shop-logo" />
       </a>
 
-      <nav className="header__navbar">
+      <nav
+        className={`header__navbar ${
+          menuClicked ? "header__navbar--active" : ""
+        }`}
+      >
         <a href="#home">Home</a>
         <a href="#about">About</a>
         <a href="#menu">Menu</a>
@@ -43,7 +52,11 @@ const Header = () => {
           id="cart-btn"
           onClick={showCartItemsHandle}
         />
-        <div className="fas fa-bars" id="menu-btn" />
+        <div
+          className="fas fa-bars"
+          id="menu-btn"
+          onClick={menuButtonHandler}
+        />
       </div>
       <div
         className={`header__search-form header__search-form${
